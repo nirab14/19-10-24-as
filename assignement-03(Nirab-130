@@ -1,0 +1,81 @@
+
+a= int(input ("Enter a number"))
+for b in range (1,11):
+  print(a,"*",b,"=",a * b)
+
+
+i = int(input("Enter a number :"))
+x = 0
+while i != 0:
+    i //= 10
+    x += 1
+print("Number of digits:" + str(x))
+
+
+x = [10, 20, 30, 40, 50]
+y=len(x)
+for i in range((y) -1,-1,-1):
+
+    print(x[i], end=" ")
+
+
+start = int(input("Enter the start limit"))
+end = int(input("Enter the end limit"))
+
+for num in range(start, end + 1):
+    if num > 1:
+        for i in range(2,num):
+            if (num % i)== 0:
+                break
+        else:
+            print(num)
+
+
+
+x= int(input("Enter a number "))
+x1, x2 = 0, 1
+print("Fibonacci", x1, x2, end=" ")
+for i in range(2, num):
+    x3 = x1 + x2
+    x1 = x2
+    x2 = x3
+    print(x3,end=" ")
+print()
+
+
+x = int(input("Enter a no.:"))
+r = 0
+while(x > 0):
+    a=x % 10
+    r=r * 10 + a
+    x=x // 10
+print(r)
+
+
+n = int(input("Enter no. of rows:"))
+for i in range(0,n+1):
+    for j in range(n-i,0,-1):
+        print(j,end=' ')
+    print()
+
+
+
+p = int(input("Enter the no. of rows-"))
+for i in range(0, p):
+    for j in range(0,i+1):
+        print("*",end=' ')
+    print("\p")
+for i in range(p,0,-1):
+    for j in range(0,i- 1):
+        print("*",end=' ')
+    print("\p")
+
+
+
+
+
+
+
+
+
+
